@@ -75,10 +75,10 @@
   :testfail: ".fail"
   :dependencies: ".d"
 :unity:
-  :vendor_path: "/home/boris/allocator/vendor/ceedling/vendor"
+  :vendor_path: "/home/boris/Desktop/allocator/vendor/ceedling/vendor"
   :defines: []
 :cmock:
-  :vendor_path: "/home/boris/allocator/vendor/ceedling/vendor"
+  :vendor_path: "/home/boris/Desktop/allocator/vendor/ceedling/vendor"
   :defines: []
   :includes: []
   :mock_prefix: mock_
@@ -97,7 +97,7 @@
   :verbosity: 3
   :unity_helper: false
 :cexception:
-  :vendor_path: "/home/boris/allocator/vendor/ceedling/vendor"
+  :vendor_path: "/home/boris/Desktop/allocator/vendor/ceedling/vendor"
   :defines: []
 :test_runner:
   :includes: []
