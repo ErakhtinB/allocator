@@ -15,8 +15,6 @@
 
 
 
-
-
 static char pull[100];
 
 static char *ptr;
@@ -71,7 +69,7 @@ void test_pull(void)
 
  int result = mysetup(pull, sizeof(pull));
 
- UnityAssertEqualNumber((UNITY_INT)((0)), (UNITY_INT)((result)), (("Pull is to small!")), (UNITY_UINT)(36), UNITY_DISPLAY_STYLE_INT);
+ UnityAssertEqualNumber((UNITY_INT)((0)), (UNITY_INT)((result)), (("Pull is to small!")), (UNITY_UINT)(35), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -105,7 +103,7 @@ void test_alloc(void)
 
  }
 
- UnityAssertEqualNumber((UNITY_INT)((1)), (UNITY_INT)((result)), (("Failed to allocate block")), (UNITY_UINT)(53), UNITY_DISPLAY_STYLE_INT);
+ UnityAssertEqualNumber((UNITY_INT)((1)), (UNITY_INT)((result)), (("Failed to allocate block")), (UNITY_UINT)(52), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -121,7 +119,7 @@ void test_alloc_null(void)
 
  if (local_ptr) result = 1;
 
- UnityAssertEqualNumber((UNITY_INT)((0)), (UNITY_INT)((result)), (("Had to fail this allocation")), (UNITY_UINT)(61), UNITY_DISPLAY_STYLE_INT);
+ UnityAssertEqualNumber((UNITY_INT)((0)), (UNITY_INT)((result)), (("Had to fail this allocation")), (UNITY_UINT)(60), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -143,7 +141,7 @@ void test_free(void)
 
  }
 
- UnityAssertEqualNumber((UNITY_INT)((1)), (UNITY_INT)((result)), (("Failed to free block")), (UNITY_UINT)(72), UNITY_DISPLAY_STYLE_INT);
+ UnityAssertEqualNumber((UNITY_INT)((1)), (UNITY_INT)((result)), (("Failed to free block")), (UNITY_UINT)(71), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -183,6 +181,6 @@ void test_threads(void)
 
  }
 
- UnityAssertEqualNumber((UNITY_INT)((10)), (UNITY_INT)((allocation_cnt)), (("Thread Mess!")), (UNITY_UINT)(86), UNITY_DISPLAY_STYLE_INT);
+ UnityAssertEqualNumber((UNITY_INT)((10)), (UNITY_INT)((allocation_cnt)), (("Thread Mess!")), (UNITY_UINT)(85), UNITY_DISPLAY_STYLE_INT);
 
 }

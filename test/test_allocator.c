@@ -2,7 +2,6 @@
 #include "my_allocator.h"
 
 #include <pthread.h>
-#include <stdio.h>
 
 #define PULL_SIZE		100
 #define MEMORY_BLOCK_SIZE	20

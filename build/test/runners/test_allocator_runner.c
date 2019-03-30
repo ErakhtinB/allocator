@@ -74,11 +74,11 @@ int main(void)
 {
   suite_setup();
   UnityBegin("test_allocator.c");
-  RUN_TEST(test_pull, 33);
-  RUN_TEST(test_alloc, 39);
-  RUN_TEST(test_alloc_null, 56);
-  RUN_TEST(test_free, 64);
-  RUN_TEST(test_threads, 75);
+  RUN_TEST(test_pull, 32);
+  RUN_TEST(test_alloc, 38);
+  RUN_TEST(test_alloc_null, 55);
+  RUN_TEST(test_free, 63);
+  RUN_TEST(test_threads, 74);
 
   return suite_teardown(UnityEnd());
 }
