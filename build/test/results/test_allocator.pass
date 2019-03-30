@@ -4,26 +4,23 @@
   :file: test_allocator.c
 :successes:
 - :test: test_pull
-  :line: 32
+  :line: 17
   :message: ''
 - :test: test_alloc
-  :line: 38
+  :line: 23
   :message: ''
 - :test: test_alloc_null
-  :line: 55
+  :line: 40
   :message: ''
 - :test: test_free
-  :line: 63
-  :message: ''
-- :test: test_threads
-  :line: 74
+  :line: 48
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 5
-  :passed: 5
+  :total: 4
+  :passed: 4
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0014174879997881362
+:time: 0.0014923609999755172

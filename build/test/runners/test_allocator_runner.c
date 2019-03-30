@@ -39,7 +39,6 @@ extern void test_pull(void);
 extern void test_alloc(void);
 extern void test_alloc_null(void);
 extern void test_free(void);
-extern void test_threads(void);
 
 
 /*=======Suite Setup=====*/
@@ -74,11 +73,10 @@ int main(void)
 {
   suite_setup();
   UnityBegin("test_allocator.c");
-  RUN_TEST(test_pull, 32);
-  RUN_TEST(test_alloc, 38);
-  RUN_TEST(test_alloc_null, 55);
-  RUN_TEST(test_free, 63);
-  RUN_TEST(test_threads, 74);
+  RUN_TEST(test_pull, 17);
+  RUN_TEST(test_alloc, 23);
+  RUN_TEST(test_alloc_null, 40);
+  RUN_TEST(test_free, 48);
 
   return suite_teardown(UnityEnd());
 }
